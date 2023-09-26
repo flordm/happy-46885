@@ -1,0 +1,346 @@
+/*!---------RESET-----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!---------HEADER---------*/
+
+
+.logocat {
+    width: 80px;
+    height: 80px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+
+/*!----------MAIN-----------*/
+
+.bienvenidos {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Huellas_corazones.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bienvenidos p {
+    width: 80%;
+    height: 400px;
+    font-size: 30px;
+    border: solid 5px lightblue;
+    background-color: whitesmoke;
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main section h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/gativentana.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 80px;
+    color: black;
+
+
+}
+
+.hero p {
+    font-size: 30px;
+    font-style: oblique;
+    width: 900px;
+    height: 500px;
+    margin: 10px;
+}
+
+
+
+
+.destacados-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destacados-contenedor div {
+    width: 250px;
+    height: 350px;
+    border: 2px solid lightblue;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 66px -3px rgba(14, 89, 143, 0.75);
+    -webkit-box-shadow: 10px 10px 66px -3px rgba(14, 89, 143, 0.75);
+    -moz-box-shadow: 10px 10px 66px -3px rgba(14, 89, 143, 0.75);
+}
+
+
+
+.destacados {
+    padding: 50px;
+}
+
+.destacados div img {
+
+    width: 250px;
+    height: 250px;
+}
+
+.destacados div h3 {
+    margin: 10px;
+}
+
+.destacados div img {
+    object-fit: cover;
+}
+
+.destacados div a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(9, 104, 228);
+    padding: 6px;
+    border-radius: 15px;
+}
+
+
+
+.cuidados img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.cuidados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 20px;
+
+}
+
+.cuidados div h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.cuidados-texto {
+    font-size: 25px;
+    border: solid 5px lightblue;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+.primer-item {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.comentario-contenedor {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(173, 216, 230, 0.518);
+}
+
+.comentario {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+main div img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*!---------FOOTER----------*/
+
+div a img {
+    width: 40px;
+    height: 30px;
+
+}
+
+
+footer h2 {
+    color: lightblue;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: rgba(173, 216, 230, 0.089);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+
+
+
+@media screen and (max-width:1072px){
+    .bienvenidos p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .cuidados div img{
+        width: 280px;
+        height:280px ;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+    .cuidados {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+        gap: 30px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:900px){
+
+}
+
+    @media screen and (max-width:850px) {
+        .hero h2 {
+            font-size: 60px;
+        }
+    }
+
+@media screen and (max-width:630px){
+    .cuidados-texto {
+        font-size: 20px;
+        width: 500px;
+        height: 400px;
+    }
+}
+
+
+    @media screen and (max-width:540px){
+        .bienvenidos p {
+            font-size: 15px;
+        }
+
+        .hero p{
+            width: 300px;
+        }
+    }
+
+
+    @media screen and (max-width:520px){
+        .cuidados-texto{
+            font-size: 15px;
+            width: 400px;
+        }
+    }
+
+@media screen and (max-width:400px){
+    .cuidados-texto{
+        font-size: 12px;
+        width:300px ;
+    }
+
+    .bienvenidos p{
+        font-size:15px ;
+    }
+}
+
+@media screen and (max-width:380px){
+    .bienvenidos p{
+        font-size: 13px;
+    }
+}
