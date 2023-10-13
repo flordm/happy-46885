@@ -1,0 +1,27 @@
+//!VARIABLES
+
+$color-principal: rgba(128, 128, 128, 0.099);
+$color-secundario: lightblue;
+$color-terciario: white;
+
+//!LISTAS
+$colores:red,blue,green,yellow,pink;
+
+$font-size: 10px, 20px, 30px, 40px,50px; 
+
+//!EXTENDS
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//!MIXINS
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+
+}

@@ -1,0 +1,121 @@
+
+@media screen and (max-width:1072px){
+    .bienvenidos p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .voluntario-img h1{
+        font-size: 40px;
+    }
+    .preguntas{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1030px){
+    .nosotros {
+        flex-direction: column;
+    }
+    .nosotros-img{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .cuidados{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+
+
+    .hero p {
+        font-size: 20px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:900px){
+
+}
+
+@media screen and (max-width:850px) {
+        .hero h2 {
+            font-size: 60px;
+        }
+}
+
+@media screen and (max-width:888px){
+
+    .formulario{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .formulario{
+        width: 400px;
+    }
+    .ubicacion h2{
+        font-size: 30px;
+    }
+    .cuidados-texto p{
+        font-size: 20px;
+    }
+    .cuidados img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:630px){
+
+}
+
+
+    @media screen and (max-width:540px){
+        .bienvenidos p {
+            font-size: 15px;
+        }
+
+        .hero p{
+            width: 300px;
+        }
+    }
+
+
+    @media screen and (max-width:520px){
+
+    }
+
+@media screen and (max-width:450px){
+    .preguntas img{
+        width: 300px;
+        height: 500px;
+    }
+    .formulario{
+        width: 300px;
+    }
+    .contacto-texto h1{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px){
+
+
+    .bienvenidos p{
+        font-size:15px ;
+    }
+}
+
+@media screen and (max-width:380px){
+    .bienvenidos p{
+        font-size: 13px;
+    }
+}

@@ -3,15 +3,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/estilos.css">
 <title>HappyCat</title>
 </head>
 
 <body>
+
+
+    <!--COMIENZO DEL HEADER-->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/logocat.png" alt="" class="logocat"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/logocat.png" alt="Logo de happycat"
+                        class="logocat"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +43,24 @@
             </div>
         </nav>
     </header>
+
+
+    <!--COMIENZO DEL MAIN-->
     <main>
         <section>
-            <form action="">
+            <img src="../img/jambi.jpeg" alt="imagen de gato">
+        </section>
+        <section class="contacto-texto">
+            <h1>Por medio de este formulario podrás ponerte en contacto con la Asociación Protectora de animales
+                HappyCat, puedes expresarnos tus dudas, inquietudes, preguntas o si simplemente quieres hacernos
+                llegar tus comentarios, estaremos gustosos de atenderte e intentaremos responderte en la mayor brevedad
+                posible. Gracias.</h1>
+        </section>
+
+        <!--FORMULARIO-->
+        <section class="formulario">
+
+            <form>
                 <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
@@ -55,49 +74,40 @@
                     <input type="email" name="email" id="email">
                 </div>
                 <div>
-                    <label for="contraseña">contraseña:</label>
+                    <label for="contraseña">Telefono de contacto:</label>
                     <input type="password" name="contraseña" id="contraseña">
+                </div>
+                <div>
+                    <label for="pais">Pais:</label>
+                    <input type="text" name="pais" id="pais">
+                </div>
+                <div>
+                    <label for="asunto">Asunto (Obligatorio):</label>
+                    <input type="text" name="asunto" id="asunto">
                 </div>
             </form>
         </section>
-        <section>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.0757976396217!2d-57.56560232438379!3d-37.9753603719355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d91d53dd0921%3A0xd091c8eaa869c692!2sMary%20flower%20nails!5e0!3m2!1ses-419!2sar!4v1693082964687!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <div>
-            <h3>Genero</h3>
-            <div>
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero">
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="genero">
-                <label for="otro">Otro</label>
-                <input type="radio" name="genero">
+
+        <!--UBICACION MAPA-->
+        <section class="ubicacion">
+            <h2>Ubicacion</h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.37032090165!2d-57.765344256063436!3d-38.017451634494535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697144972003!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
-        <div>
+        </section>
 
-            <select name="" id="">Pais
-                <option value="">Argentina</option>
-                <option value="">Colombia</option>
-                <option value="">España</option>
-            </select>
-        </div>
-        <div>
 
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <input type="submit">
-            <input type="reset">
-        </div>
+
     </main>
-    <footer id="pie">
-        <h2><img src="../img/logocat.png" alt="" class="logocat"></h2>
-        <DIv>
 
+
+    <!--INICIO DEL FOOTER-->
+    <footer id="pie">
+        <img src="../img/logocat.png" alt="Logo de happycat" class="logocat">
+        <DIv>
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.svg" alt=""></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.svg" alt=""></a>
         </DIv>

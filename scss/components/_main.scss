@@ -1,0 +1,374 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/gativentana.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+        h1{
+            font-size: 80px;
+            color: black;
+        }
+        p{
+            font-size: 30px;
+            font-style: oblique;
+            width: 900px;
+            height: 500px;
+            margin: 10px;
+
+        }
+    }
+
+
+
+.bienvenidos{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Huellas_corazones.jpg);
+    background-size: cover;
+    background-position: center;
+    @extend %flex-center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    h2{
+    }
+    p{
+    width: 80%;
+    height: 400px;
+    font-size: 30px;
+    border: solid 5px lightblue;
+    background-color: whitesmoke;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+}
+
+section{
+    h2{
+        font-size: 50px;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+.destacados{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 50px;
+    background-color: rgba(128, 128, 128, 0.099);
+    h2{
+
+    }
+    .destacados-contenedor{
+        @include flex (flex, space-around,center)
+        flex-wrap: wrap;
+
+        div{
+            width: 250px;
+            height: 400px;
+            border: 2px solid lightblue;
+            margin: 10px;
+            text-align: center;
+            background-color: white;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 10px 10px 66px -3px rgba(14, 89, 143, 0.75);
+                -webkit-box-shadow: 10px 10px 66px -3px rgba(14, 89, 143, 0.75);
+                -moz-box-shadow: 10px 10px 66px -3px rgba(14, 89, 143, 0.75);
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+            h3{
+                margin: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: rgb(9, 104, 228);
+                padding: 6px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.cuidados{
+    @extend %flex-center;
+    margin: 0px;
+    background-image: url(../img/Huellas_corazones.jpg);
+    background-size: cover;
+    background-position: center;
+    .cuidados-texto{
+        border: solid 5px lightblue;
+        width: 600px;
+        height: 500px;
+        padding: 6px;
+        margin: 10px;
+        background-color: white;
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+    img{
+        width: 300px;
+        height: 500px;
+        object-fit: cover;
+        background-position: center;
+    }
+}
+
+
+
+
+div{
+    img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+}
+
+section{
+    img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+}
+
+
+.comentario-contenedor{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(128, 128, 128, 0.099);
+    title{
+
+    }
+    .comentarios{
+        background-color:rgba(128, 128, 128, 0.099);
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        h2{
+
+        }
+        form{
+            label{
+                display: block;
+                margin-top: 10px;
+            }
+            input[type="text"],
+            textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+
+            button{
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                margin-top: 10px;
+                cursor: pointer;
+                
+                &:hover{
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+}
+
+.voluntario-img{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/manos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @extend %flex-center;
+    flex-direction: column;
+    padding: 20px;
+        h1{
+            font-size: 60px;
+            color: white;
+            border: solid white 1px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        p{
+            font-size: 20px;
+            
+        }
+    
+}
+
+
+.preguntas{
+    @extend %flex-center;
+    background-color: rgba(128, 128, 128, 0.099);
+    .preguntas-texto{
+        width: 50%;
+        margin: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    img{
+        width: 400px;
+        height: 600px;
+    }
+}
+
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgba(128, 128, 128, 0.099);
+    .nosotros-texto{
+        width: 50%;
+        margin: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        p{
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.nosotros-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.099);
+    .nosotros-texto{
+        width: 50%;
+        margin: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        p{
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+
+
+.datos{
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.099);
+    h1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .datos-contenedor{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            width: 250px;
+            height: 400px;
+            margin: 40px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            h2{
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.formulario{
+    margin: 50px;
+    width: 800px; 
+    height: 500px;
+    padding: 20px; 
+    background-color:rgba(154, 146, 146, 0.197) ;
+    div{
+        label{
+            display: block; 
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+    }
+}
+
+.mapa{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(128, 128, 128, 0.197);
+}
+.ubicacion{
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.contacto-texto h1{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.099);
+}
