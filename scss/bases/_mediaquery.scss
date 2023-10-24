@@ -33,7 +33,13 @@
 
 @media screen and (max-width:960px) {
 
-
+    .cuidados .cuidados-texto p{
+        font-size: 25px;
+    }
+    .cuidados .cuidados-texto{
+        width: 500px;
+        height: 400px;
+    }
     .hero p {
         font-size: 20px;
         width: 500px;
@@ -55,6 +61,9 @@
     .formulario{
         width: 600px;
     }
+    .cuidados-texto p{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:680px){
@@ -64,13 +73,11 @@
     .ubicacion h2{
         font-size: 30px;
     }
-    .cuidados-texto p{
-        font-size: 20px;
-    }
     .cuidados img{
         width: 300px;
         height: 300px;
     }
+
 }
 
 @media screen and (max-width:630px){
@@ -86,11 +93,33 @@
         .hero p{
             width: 300px;
         }
+
+        .cuidados .cuidados-texto{
+            width: 300px;
+            height: 300px;
+        }
+        .cuidados .cuidados-texto p{
+            font-size: 15px;
+        }
+        .cuidados .cuidados-texto h2{
+            font-size: 20px;
+        }
+        .nosotros .nosotros-texto{
+            width: 70%;
+        }
+        .nosotros-img .nosotros-texto{
+            width: 70%;
+        }
+        .preguntas .preguntas-texto{
+            width: 70%;
+        }
     }
 
 
     @media screen and (max-width:520px){
-
+        .hero h1{
+            font-size: 70px;
+        }
     }
 
 @media screen and (max-width:450px){
@@ -104,13 +133,38 @@
     .contacto-texto h1{
         font-size: 15px;
     }
+    .nosotros .nosotros-texto{
+        width: 80%;
+    }
+    .nosotros-img .nosotros-texto{
+        width: 80%;
+    }
+    .nosotros img{
+        width: 300px;
+        height: 300px;
+    }
+    .nosotros-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .preguntas .preguntas-texto{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:400px){
-
+    .hero h1{
+        font-size: 50px;
+    }
 
     .bienvenidos p{
         font-size:15px ;
+    }
+    .destacados h2{
+        font-size: 40px;
+    }
+    .voluntario-img h1{
+        font-size: 30px;
     }
 }
 

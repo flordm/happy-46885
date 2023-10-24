@@ -1,3 +1,5 @@
+/*-----------INDEX-------------*/
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -22,7 +24,6 @@
             width: 900px;
             height: 500px;
             margin: 10px;
-
         }
     }
 
@@ -38,6 +39,9 @@
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     h2{
+        font-size: 50px;
+        text-align: center;
+        padding: 30px;
     }
     p{
     width: 80%;
@@ -53,20 +57,15 @@
     }
 }
 
-section{
-    h2{
-        font-size: 50px;
-        text-align: center;
-        padding: 30px;
-    }
-}
 
 .destacados{
     font-family: 'Times New Roman', Times, serif;
     padding: 50px;
     background-color: rgba(128, 128, 128, 0.099);
     h2{
-
+        font-size: 50px;
+        text-align: center;
+        padding: 30px;
     }
     .destacados-contenedor{
         @include flex (flex, space-around,center)
@@ -123,7 +122,8 @@ section{
             text-align: center;
         }
         p{
-            font-size: 25px;
+            font-size: 30px;
+
         }
     }
     img{
@@ -131,25 +131,6 @@ section{
         height: 500px;
         object-fit: cover;
         background-position: center;
-    }
-}
-
-
-
-
-div{
-    img{
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-    }
-}
-
-section{
-    img{
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
     }
 }
 
@@ -202,6 +183,12 @@ section{
     }
 }
 
+
+
+
+
+/*-----------VOLUNTARIO-------------*/
+
 .voluntario-img{
     width: 100%;
     height: 70vh;
@@ -219,10 +206,6 @@ section{
             border: solid white 1px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-        }
-        p{
-            font-size: 20px;
-            
         }
     
 }
@@ -248,6 +231,8 @@ section{
     }
 }
 
+
+/*-----------NOSOTROS-------------*/
 
 .nosotros{
     display: flex;
@@ -328,6 +313,28 @@ section{
 }
 
 
+
+
+/*-----------CONTACTO-------------*/
+
+section{
+    img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+}
+
+.contacto-texto{
+    H1{
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 30px;
+        background-color: rgba(128, 128, 128, 0.099);
+    }
+}
+
 .formulario{
     margin: 50px;
     width: 800px; 
@@ -352,23 +359,20 @@ section{
     }
 }
 
-.mapa{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 50px;
-    background-color: rgba(128, 128, 128, 0.197);
-}
 .ubicacion{
     h2{
-        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-align: center;
+    }
+    .mapa{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 50px;
+        background-color: rgba(128, 128, 128, 0.197);
+        iframe{
+
+        }
     }
 }
 
-.contacto-texto h1{
-    font-size: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 30px;
-    background-color: rgba(128, 128, 128, 0.099);
-}
